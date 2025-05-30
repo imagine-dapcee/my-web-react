@@ -3,6 +3,13 @@ Contact.jsx
 import React, { useState } from 'react';
 
 function Contact() {
+<div className="text-center">
+      <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+      <p className="text-lg">Feel free to reach out to us via email or phone.</p>
+      <p className="text-lg">Email: oladapcee3@gmail.com</p>
+      <p className="text-lg">Phone: 09010020030</p>
+    </div>
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,7 +30,13 @@ function Contact() {
 
   return (
     <div style={{ maxWidth: '500px', margin: '0 auto', padding: '1rem' }}>
-      <h2>Contact Us</h2>
+      <div className="text-center">
+      <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+      <p className="text-lg">Feel free to reach out to us via email or phone.</p>
+      <p className="text-lg">Email: imagine_tech@gmail.com</p>
+      <p className="text-lg">Phone: 09010020030</p>
+    </div>
+      <h2>Write Us</h2>
       <form onSubmit={handleSubmit}>
         <div style={{ marginBottom: '1rem' }}>
           <label htmlFor="name">Name:</label><br />
@@ -63,8 +76,10 @@ function Contact() {
         </div>
         <button type="submit" style={{ padding: '0.5rem 1rem' }}>Send</button>
       </form>
-    </div>
+     </div>
+
+    
   );
 }
 
-export default Contact;
+export default Contact;
